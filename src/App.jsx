@@ -2,7 +2,6 @@ import { useEffect, useState } from "react";
 import cardsData from "./data/genesys_merged.json";
 import "./App.css";
 
-// Move typeOrder outside the component to avoid exhaustive-deps warning
 const typeOrder = [
   "normal",
   "effect",
@@ -16,55 +15,77 @@ const typeOrder = [
 
 function App() {
   const [cards, setCards] = useState([]);
-  const [sortDesc, setSortDesc] = useState(true); // default descending
-  const [filterType, setFilterType] = useState(""); // empty = show all
-
+  const [sortDesc, setSortDesc] = useState(true);
+  const [search, setSearch] = useState(""); // search state
+  const [selectedType, setSelectedType] = useState("all"); // optional type filter
 
   useEffect(() => {
-    const sorted = [...cardsData].sort((a, b) => {
-      // First: points (primary)
-      const pointDiff = sortDesc
+    let filtered = [...cardsData];
+
+    // Filter by search text
+    if (search.trim() !== "") {
+      filtered = filtered.filter((card) =>
+        card.name.toLowerCase().includes(search.toLowerCase())
+      );
+    }
+
+    // Filter by type if selected
+    if (selectedType !== "all") {
+      filtered = filtered.filter(
+        (card) => card.frameType.toLowerCase() === selectedType
+      );
+    }
+
+    // Sort by type order first, then points
+    const sorted = filtered.sort((a, b) => {
+      const typeA = typeOrder.indexOf(a.frameType.toLowerCase());
+      const typeB = typeOrder.indexOf(b.frameType.toLowerCase());
+
+      if (typeA !== typeB) return typeA - typeB;
+
+      return sortDesc
         ? Number(b.genesys_points) - Number(a.genesys_points)
         : Number(a.genesys_points) - Number(b.genesys_points);
-      if (pointDiff !== 0) return pointDiff;
-
-      // Second: type order (within same points)
-      const typeA = typeOrder.indexOf(a.frameType);
-      const typeB = typeOrder.indexOf(b.frameType);
-      return typeA - typeB;
     });
 
     setCards(sorted);
-  }, [sortDesc]);
+  }, [sortDesc, search, selectedType]);
 
   const toggleSort = () => setSortDesc(!sortDesc);
 
   return (
     <div className="container">
       <h1>Yu-Gi-Oh! Genesys Format</h1>
+
       <div className="controls">
-        <div className="controls">
-        <button onClick={toggleSort}>
-          Sort {sortDesc ? "Lowest → Highest" : "Highest → Lowest"}
-        </button>
+        <input
+          type="text"
+          placeholder="Search cards..."
+          value={search}
+          onChange={(e) => setSearch(e.target.value)}
+          style={{ padding: "8px", marginRight: "10px", borderRadius: "6px" }}
+        />
+
         <select
-          value={filterType}
-          onChange={(e) => setFilterType(e.target.value)}
-          style={{ marginLeft: "12px", padding: "6px", borderRadius: "4px" }}
+          value={selectedType}
+          onChange={(e) => setSelectedType(e.target.value)}
+          style={{ padding: "8px", marginRight: "10px", borderRadius: "6px" }}
         >
-          <option value="">All Types</option>
-          {typeOrder.map((type) => (
-            <option key={type} value={type}>
-              {type.charAt(0).toUpperCase() + type.slice(1)}
+          <option value="all">All Types</option>
+          {typeOrder.map((t) => (
+            <option key={t} value={t}>
+              {t.charAt(0).toUpperCase() + t.slice(1)}
             </option>
           ))}
         </select>
+
+        <button onClick={toggleSort}>
+          Sort {sortDesc ? "Ascending" : "Descending"}
+        </button>
       </div>
-      </div>
+
       <div className="grid">
-        {cards.filter((card) =>
-          filterType ? card.frameType === filterType : true
-          ).map((card) => (
+        {cards.map((card) => (
           <div className="card" key={card.id || card.name}>
             <img
               src={
