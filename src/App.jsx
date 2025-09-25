@@ -50,14 +50,34 @@ function parsePointsFilter(input) {
 function App() {
   const [cards, setCards] = useState([]);
   const [sortDesc, setSortDesc] = useState(true); // true => Highest -> Lowest by points
+  const [selectedArchetype, setSelectedArchetype] = useState("");
   const [selectedType, setSelectedType] = useState("all");
   const [search, setSearch] = useState("");
   const [pointsFilter, setPointsFilter] = useState("");
 
-  useEffect(() => {
-    // start from original dataset
-    let filtered = [...cardsData];
+  // Get unique archetypes for dropdown
+  const _cards = cardsData.data
+    .map(card => ({
+      ...card,
+      // flatten genesys_points so the rest of your code works the same
+      genesys_points: card.misc_info?.[0]?.genesys_points ?? 0,
+    }))
+    .filter(card => card.genesys_points > 0);
 
+    // Start from normalized dataset
+    let filtered = [..._cards];
+
+      const archetypes = Array.from(
+        new Set(filtered.map((card) => card.archetype).filter(Boolean))
+      ).sort();
+
+  useEffect(() => {
+  if (selectedArchetype) {
+   // eslint-disable-next-line react-hooks/exhaustive-deps
+   filtered = filtered.filter(
+     (card) => card.archetype === selectedArchetype
+   );
+ }
     // 1) type filter (use normalized type)
     if (selectedType && selectedType !== "all") {
       filtered = filtered.filter((c) => normalizeType(c.frameType) === selectedType);
@@ -73,7 +93,7 @@ function App() {
     const range = parsePointsFilter(pointsFilter);
     if (range) {
       filtered = filtered.filter((c) => {
-        const p = Number(c.genesys_points);
+        const p = Number(c.misc_info[0].genesys_points);
         if (!Number.isFinite(p)) return false;
         return p >= range.min && p <= range.max;
       });
@@ -81,8 +101,8 @@ function App() {
 
     // 4) SORT — primary: points (desc/asc), secondary: typeOrder
     const sorted = filtered.sort((a, b) => {
-      const pa = Number(a.genesys_points) || 0;
-      const pb = Number(b.genesys_points) || 0;
+      const pa = Number(a.misc_info[0].genesys_points) || 0;
+      const pb = Number(b.misc_info[0].genesys_points) || 0;
 
       if (pa !== pb) {
         return sortDesc ? pb - pa : pa - pb; // points primary
@@ -102,14 +122,15 @@ function App() {
     });
 
     setCards(sorted);
-  }, [sortDesc, selectedType, search, pointsFilter]);
+  }, [sortDesc, selectedType, selectedArchetype, search, pointsFilter]);
 
   const toggleSort = () => setSortDesc((s) => !s);
 
   return (
     <div className="container">
-      <h1>Yu-Gi-Oh! Genesys Format</h1>
-
+      <h1>Yu-Gi-Oh! Genesys Format Helper</h1>
+      <h4> Last Update: 24 Sept, 2025</h4>
+      <h5> New features coming soon...</h5>
       <div className="controls">
         {/* Search */}
         <input
@@ -128,6 +149,20 @@ function App() {
           onChange={(e) => setPointsFilter(e.target.value)}
           style={{ padding: "8px", marginRight: "10px", borderRadius: "6px" }}
         />
+
+         {/* Archetype dropdown */}
+          <select
+            value={selectedArchetype}
+            onChange={(e) => setSelectedArchetype(e.target.value)}
+            style={{ padding: "8px", marginRight: "10px", borderRadius: "6px" , width: '125px'}}
+          >
+            <option value="">All Archetypes</option>
+            {archetypes.map((arch) => (
+              <option key={arch} value={arch}>
+                {arch}
+              </option>
+            ))}
+          </select>
 
         {/* Type selector - options come from typeOrder (normalized values) */}
         <select
@@ -172,7 +207,7 @@ function App() {
               >
                 {card.name}
               </p>
-              <p className="points">{card.genesys_points} pts</p>
+              <p className="points">{card.misc_info[0].genesys_points} pts</p>
             </>
           );
 
