@@ -1,0 +1,64 @@
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+}
+
+.popup {
+  background-color: #1e1e2f;
+  color: #f0f0f0;
+  padding: 25px;
+  border-radius: 12px;
+  max-width: 500px;
+  width: 90%;
+  text-align: left; /* left align all text */
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+  border: 2px solid #0077cc;
+}
+
+.popup h2 {
+  margin-bottom: 12px;
+  font-size: 1.8rem;
+  color: #00aaff;
+  text-align: center; /* keep the title centered */
+}
+
+.popup ul {
+  padding-left: 20px;
+  margin-bottom: 20px;
+}
+
+.popup li {
+  margin: 6px 0;
+  line-height: 1.4;
+}
+
+.closeButton {
+  display: block;
+  margin: 0 auto; /* center the button under the list */
+  padding: 10px 16px;
+  border: none;
+  border-radius: 8px;
+  background-color: #0077cc;
+  color: #ffffff;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.closeButton:hover {
+  background-color: #005fa3;
+}
+
+/* Center the button visually */
+.buttonRow {
+  text-align: center;
+  margin-top: 6px;
+}

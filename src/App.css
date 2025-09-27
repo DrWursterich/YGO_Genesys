@@ -93,3 +93,25 @@ button:hover {
   font-size: 1.5rem;
   color: #ccc;
 }
+
+.changelog {
+  margin-top: 40px;
+  border-top: 1px solid #ccc;
+  padding-top: 20px;
+}
+
+.changelog h2 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.changelog-entry h3 {
+  font-size: 1.2rem;
+  margin-bottom: 5px;
+}
+
+.changelog-entry ul {
+  margin: 0;
+  padding-left: 20px;
+}
+

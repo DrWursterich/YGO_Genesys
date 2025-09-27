@@ -1,8 +1,12 @@
-import { useEffect, useState } from "react";
+import { useEffect, useState, useMemo } from "react";
 import cardsData from "./data/genesys_merged.json";
+import zeroCardsData from "./data/staplesZero.json";
 import "./App.css";
+import ChangelogPopup from "./ChangelogPopup";
+import { changelog, CHANGELOG_VERSION } from "./data/changelog";
 
 const typeOrder = [
+  "normal",
   "effect",
   "ritual",
   "fusion",
@@ -49,87 +53,135 @@ function parsePointsFilter(input) {
 
 function App() {
   const [cards, setCards] = useState([]);
+  const [archetypes, setArchetypes] = useState([]); // add this
+  const [showSpecial, setShowSpecial] = useState(false);
+  const [showChangelog, setShowChangelog] = useState(false);
   const [sortDesc, setSortDesc] = useState(true); // true => Highest -> Lowest by points
   const [selectedArchetype, setSelectedArchetype] = useState("");
   const [selectedType, setSelectedType] = useState("all");
   const [search, setSearch] = useState("");
   const [pointsFilter, setPointsFilter] = useState("");
 
-  // Get unique archetypes for dropdown
-  const _cards = cardsData.data
+  // Normal cards (points > 0)
+  const ogCards = cardsData.data
     .map(card => ({
       ...card,
       // flatten genesys_points so the rest of your code works the same
       genesys_points: card.misc_info?.[0]?.genesys_points ?? 0,
     }))
-    .filter(card => card.genesys_points > 0);
+    const _cards = useMemo(() => ogCards.filter(card => card.genesys_points > 0), [ogCards]) 
 
-    // Start from normalized dataset
-    let filtered = [..._cards];
-
-      const archetypes = Array.from(
-        new Set(filtered.map((card) => card.archetype).filter(Boolean))
-      ).sort();
+    const specialNames = zeroCardsData.map(c => c.name);
+    
+    const zeroCards = useMemo(
+      () =>
+        ogCards
+          .filter(c => c.genesys_points <= 0)
+          .filter(c => specialNames.includes(c.name)),
+      [ogCards, specialNames]
+    );
 
   useEffect(() => {
+
+    
+
+  // 1️⃣ Determine which array to start with
+  const displayedCards = showSpecial ? zeroCards : _cards;
+  let filtered = [...displayedCards];
+
+  // 2️⃣ Update archetypes dropdown based on displayedCards
+  setArchetypes(
+    Array.from(new Set(displayedCards.map((c) => c.archetype).filter(Boolean))).sort()
+  );
+
+  // 3️⃣ Apply archetype filter
   if (selectedArchetype) {
-   // eslint-disable-next-line react-hooks/exhaustive-deps
-   filtered = filtered.filter(
-     (card) => card.archetype === selectedArchetype
-   );
- }
-    // 1) type filter (use normalized type)
-    if (selectedType && selectedType !== "all") {
-      filtered = filtered.filter((c) => normalizeType(c.frameType) === selectedType);
-    }
+    filtered = filtered.filter((c) => c.archetype === selectedArchetype);
+  }
 
-    // 2) name search (case-insensitive)
-    if (search.trim() !== "") {
-      const s = search.toLowerCase();
-      filtered = filtered.filter((c) => (c.name || "").toLowerCase().includes(s));
-    }
+  // 4️⃣ Apply type filter
+  if (selectedType && selectedType !== "all") {
+    filtered = filtered.filter((c) => normalizeType(c.frameType) === selectedType);
+  }
 
-    // 3) points filter (exact or range; accepts 10-1 or 1-10)
-    const range = parsePointsFilter(pointsFilter);
-    if (range) {
-      filtered = filtered.filter((c) => {
-        const p = Number(c.misc_info[0].genesys_points);
-        if (!Number.isFinite(p)) return false;
-        return p >= range.min && p <= range.max;
-      });
-    }
+  // 5️⃣ Apply search filter
+  if (search.trim() !== "") {
+    const s = search.toLowerCase();
+    filtered = filtered.filter((c) => (c.name || "").toLowerCase().includes(s));
+  }
 
-    // 4) SORT — primary: points (desc/asc), secondary: typeOrder
-    const sorted = filtered.sort((a, b) => {
-      const pa = Number(a.misc_info[0].genesys_points) || 0;
-      const pb = Number(b.misc_info[0].genesys_points) || 0;
-
-      if (pa !== pb) {
-        return sortDesc ? pb - pa : pa - pb; // points primary
-      }
-
-      // same points -> order by normalized type according to typeOrder
-      const na = normalizeType(a.frameType);
-      const nb = normalizeType(b.frameType);
-      let ia = typeOrder.indexOf(na);
-      let ib = typeOrder.indexOf(nb);
-
-      // put unknown types after known ones
-      if (ia === -1) ia = typeOrder.length;
-      if (ib === -1) ib = typeOrder.length;
-
-      return ia - ib;
+  // 6️⃣ Apply points filter
+  const range = parsePointsFilter(pointsFilter);
+  if (range) {
+    filtered = filtered.filter((c) => {
+      const p = Number(c.genesys_points);
+      return Number.isFinite(p) && p >= range.min && p <= range.max;
     });
+  }
 
-    setCards(sorted);
-  }, [sortDesc, selectedType, selectedArchetype, search, pointsFilter]);
+  // 7️⃣ Sort
+  const sorted = filtered.sort((a, b) => {
+    const pa = Number(a.genesys_points) || 0;
+    const pb = Number(b.genesys_points) || 0;
+    if (pa !== pb) return sortDesc ? pb - pa : pa - pb;
+
+    const na = normalizeType(a.frameType);
+    const nb = normalizeType(b.frameType);
+    let ia = typeOrder.indexOf(na);
+    let ib = typeOrder.indexOf(nb);
+    if (ia === -1) ia = typeOrder.length;
+    if (ib === -1) ib = typeOrder.length;
+    return ia - ib;
+  });
+
+  setCards(sorted);
+}, [_cards, zeroCards, sortDesc, selectedType, selectedArchetype, search, pointsFilter, showSpecial]);
 
   const toggleSort = () => setSortDesc((s) => !s);
 
+  // ✅ new effect for changelog popup
+  useEffect(() => {
+    try {
+      const seen = localStorage.getItem("changelog_version");
+      if (seen !== CHANGELOG_VERSION) {
+        setShowChangelog(true);
+      }
+    } catch {
+      setShowChangelog(true); // fallback if localStorage is blocked
+    }
+  }, []);
+
+  const handleCloseChangelog = () => {
+    try {
+      localStorage.setItem("changelog_version", CHANGELOG_VERSION);
+    } catch {
+      /* ignore storage errors */
+    }
+    setShowChangelog(false);
+  };
+
   return (
     <div className="container">
+      <div className="controls" style={{ position: "relative" }}>
+      <button onClick={() => setShowSpecial((prev) => !prev)}>
+        {showSpecial ? "Show 0+ Points Cards" : "Show 0 Points Staples"}
+      </button>
+    </div>
       <h1>Yu-Gi-Oh! Genesys Format Helper</h1>
-      <h4> Last Update: 24 Sept, 2025</h4>
+      <h4> Genesys Points Update: 24 Sept, 2025</h4>
+      <a
+      href="https://thehelixcore.github.io/YGO_Genesys/"
+      target="_blank"
+      rel="noopener noreferrer"
+      style={{ display: "inline-flex", alignItems: "center", gap: "6px" }}
+    >
+      <img
+        src="https://abs.twimg.com/favicons/twitter.2.ico"
+        alt="Twitter"
+        style={{ width: "20px", height: "20px" }}
+      />
+      Follow me on Twitter
+    </a>
       <h5> New features coming soon...</h5>
       <div className="controls">
         {/* Search */}
@@ -229,6 +281,9 @@ function App() {
           );
         })}
       </div>
+      {showChangelog && (
+        <ChangelogPopup changelog={changelog} onClose={handleCloseChangelog} />
+      )}
     </div>
   );
 }
