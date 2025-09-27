@@ -170,7 +170,7 @@ function App() {
       <h1>Yu-Gi-Oh! Genesys Format Helper</h1>
       <h4> Genesys Points Update: 24 Sept, 2025</h4>
       <a
-      href="https://thehelixcore.github.io/YGO_Genesys/"
+      href="https://x.com/TheHelixCore"
       target="_blank"
       rel="noopener noreferrer"
       style={{ display: "inline-flex", alignItems: "center", gap: "6px" }}
