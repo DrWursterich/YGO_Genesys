@@ -136,26 +136,26 @@ function App() {
   return (
     <div className="container">
       <div className="controls" style={{ position: "relative" }}>
-      <button onClick={() => setShowSpecial((prev) => !prev)}>
-        {showSpecial ? "Show 0+ Points Cards" : "Show 0 Points Staples"}
-      </button>
-    </div>
+        <button onClick={() => setShowSpecial((prev) => !prev)}>
+          {showSpecial ? "Show 0+ Points Cards" : "Show 0 Points Staples"}
+        </button>
+      </div>
       <h1>Yu-Gi-Oh! Genesys Format Helper</h1>
-      <h4> Genesys Points Update: 24 Sept, 2025</h4>
+      <h4>Genesys Points Update: 27 Oct, 2025</h4>
       <a
         href="https://x.com/TheHelixCore"
         target="_blank"
         rel="noopener noreferrer"
         style={{ display: "inline-flex", alignItems: "center", gap: "6px" }}
       >
-      <img
-        src="https://abs.twimg.com/favicons/twitter.2.ico"
-        alt="Twitter"
-        style={{ width: "20px", height: "20px" }}
-      />
-      Follow me on Twitter
-    </a>
-      <h5> New features coming soon...</h5>
+        <img
+          src="https://abs.twimg.com/favicons/twitter.2.ico"
+          alt="Twitter"
+          style={{ width: "20px", height: "20px" }}
+        />
+        Follow me on Twitter
+      </a>
+      <h5>New features coming soon...</h5>
       <div className="controls">
         {/* Search */}
         <input
@@ -175,19 +175,19 @@ function App() {
           style={{ padding: "8px", marginRight: "10px", borderRadius: "6px" }}
         />
 
-         {/* Archetype dropdown */}
-          <select
-            value={selectedArchetype}
-            onChange={(e) => setSelectedArchetype(e.target.value)}
-            style={{ padding: "8px", marginRight: "10px", borderRadius: "6px" , width: '125px'}}
-          >
-            <option value="">All Archetypes</option>
-            {archetypes.map((arch) => (
-              <option key={arch} value={arch}>
-                {arch}
-              </option>
-            ))}
-          </select>
+        {/* Archetype dropdown */}
+        <select
+          value={selectedArchetype}
+          onChange={(e) => setSelectedArchetype(e.target.value)}
+          style={{ padding: "8px", marginRight: "10px", borderRadius: "6px" , width: '125px'}}
+        >
+          <option value="">All Archetypes</option>
+          {archetypes.map((arch) => (
+            <option key={arch} value={arch}>
+              {arch}
+            </option>
+          ))}
+        </select>
 
         {/* Type selector - options come from typeOrder (normalized values) */}
         <select
