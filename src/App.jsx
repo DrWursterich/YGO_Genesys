@@ -142,6 +142,17 @@ function App() {
       </div>
       <h1>Yu-Gi-Oh! Genesys Format Helper</h1>
       <h4>Genesys Points Update: 27 Oct, 2025</h4>
+      <h5>
+        This is a fork from
+        <a
+          href="https://github.com/thehelixcore/YGO_Genesys"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          TheHelixCore
+        </a>
+        !
+      </h5>
       <a
         href="https://x.com/TheHelixCore"
         target="_blank"
@@ -153,9 +164,8 @@ function App() {
           alt="Twitter"
           style={{ width: "20px", height: "20px" }}
         />
-        Follow me on Twitter
+        Follow him on Twitter
       </a>
-      <h5>New features coming soon...</h5>
       <div className="controls">
         {/* Search */}
         <input
