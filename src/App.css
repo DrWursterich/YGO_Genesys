@@ -15,8 +15,6 @@ body {
 }
 
 #root {
-  display: flex;
-  flex-direction: center;
   width: 100%;
 }
 
@@ -95,7 +93,7 @@ button:hover {
   font-weight: bold;
   font-size: 1rem;
   line-height: normal;
-  margin: 8px 0px;
+  margin: auto;
   color: #0077cc;
   text-decoration: none;
 }
@@ -103,7 +101,7 @@ button:hover {
 .points {
   font-size: 1.5rem;
   color: #ccc;
-  margin-top: auto;
+  margin: auto auto 0px auto;
 }
 
 .changelog {
@@ -126,4 +124,3 @@ button:hover {
   margin: 0;
   padding-left: 20px;
 }
-
