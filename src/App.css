@@ -4,7 +4,6 @@ html, body {
   width: 100%;
   min-height: 100%;
   background-color: #252525;
-  /* background-color: #1C1C1C; */
   color: #eee;
   font-family: sans-serif;
   box-sizing: border-box;
@@ -12,18 +11,23 @@ html, body {
 
 body {
   display: flex;
-  justify-content: center; /* horizontal centering */
+  justify-content: center;
+}
+
+.root {
+  display: flex;
+  flex-direction: center;
+  width: 100%;
 }
 
 .container {
   display: flex;
   flex-direction: column;
-  align-items: center; /* center children horizontally */
+  align-items: center;
   padding: 20px;
   max-width: 1400px;
   width: 95%;
-  margin-top: auto;    /* pushes container to vertical center if possible */
-  margin-bottom: auto; /* same */
+  margin: auto;
 }
 
 h1 {
@@ -34,7 +38,8 @@ h1 {
 }
 
 .controls {
-  margin-bottom: 20px;
+  position: relative;
+  margin: 20px 0;
   text-align: center;
 }
 
@@ -57,17 +62,21 @@ button:hover {
 .grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
-  gap: 12px;
+  justify-items: start;
+  gap: 9px 0;
   width: 100%;
 }
 
 .card {
-  background: #1C1C1C;;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background: #1C1C1C;
   border-radius: 8px;
   overflow: hidden;
   box-shadow: 0 2px 6px rgba(255, 255, 255, 0.1);
   text-align: center;
-  padding: 6px;
+  padding: 5px;
   transition: transform 0.2s;
 }
 
@@ -77,6 +86,7 @@ button:hover {
 
 .card img {
   width: 100%;
+  display: block;
   height: auto;
   border-radius: 4px;
   margin-bottom: 6px;
@@ -84,14 +94,17 @@ button:hover {
 
 .name {
   font-weight: bold;
-  font-size: 0.85rem;
-  margin-bottom: 2px;
-  color: #eee;
+  font-size: 1rem;
+  line-height: normal;
+  margin: 8px 0px;
+  color: #0077cc;
+  text-decoration: none;
 }
 
 .points {
   font-size: 1.5rem;
   color: #ccc;
+  margin-top: auto;
 }
 
 .changelog {

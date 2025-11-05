@@ -135,23 +135,15 @@ function App() {
 
   return (
     <div className="container">
-      <div className="controls" style={{ position: "relative" }}>
+      <div className="controls">
         <button onClick={() => setShowSpecial((prev) => !prev)}>
           {showSpecial ? "Show 0+ Points Cards" : "Show 0 Points Staples"}
         </button>
       </div>
       <h1>Yu-Gi-Oh! Genesys Format Helper</h1>
       <h4>Genesys Points Update: 27 Oct, 2025</h4>
-      <h5>
-        This is a fork from
-        <a
-          href="https://github.com/thehelixcore/YGO_Genesys"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          TheHelixCore
-        </a>
-        !
+      <h5 style={{ marginBlockEnd: "unset" }}>
+        This is a fork from <a href="https://github.com/thehelixcore/YGO_Genesys" target="_blank" rel="noopener noreferrer">TheHelixCore</a>
       </h5>
       <a
         href="https://x.com/TheHelixCore"
@@ -164,7 +156,7 @@ function App() {
           alt="Twitter"
           style={{ width: "20px", height: "20px" }}
         />
-        Follow him on Twitter
+        Follow them on Twitter!
       </a>
       <div className="controls">
         {/* Search */}
@@ -227,18 +219,7 @@ function App() {
                 src={card.image}
                 alt={card.name}
               />
-              <p
-                className="name"
-                style={{
-                  fontSize: "1.2rem",
-                  fontWeight: "bold",
-                  margin: "8px 0",
-                  color: "#0077cc",
-                  textDecoration: "none",
-                }}
-              >
-                {card.name}
-              </p>
+              <p className="name">{card.name}</p>
               <p className="points">{card.points} pts</p>
             </>
           );
@@ -250,7 +231,6 @@ function App() {
               target="_blank"
               rel="noopener noreferrer"
               className="card"
-              style={{ textDecoration: "none", color: "inherit" }}
             >
               {CardContent}
             </a>
