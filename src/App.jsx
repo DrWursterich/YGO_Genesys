@@ -220,7 +220,7 @@ function App() {
                 alt={card.name}
               />
               <p className="name">{card.name}</p>
-              <p className="points">{card.points} pts</p>
+              <p className="points">{card.points === 1 ? '1 pt' : `${card.points} pts`}</p>
             </>
           );
 

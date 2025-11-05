@@ -14,7 +14,7 @@ body {
   justify-content: center;
 }
 
-.root {
+#root {
   display: flex;
   flex-direction: center;
   width: 100%;
@@ -26,7 +26,6 @@ body {
   align-items: center;
   padding: 20px;
   max-width: 1400px;
-  width: 95%;
   margin: auto;
 }
 
@@ -63,7 +62,7 @@ button:hover {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
   justify-items: start;
-  gap: 9px 0;
+  gap: 5px;
   width: 100%;
 }
 
