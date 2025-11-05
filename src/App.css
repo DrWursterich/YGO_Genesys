@@ -35,9 +35,11 @@ h1 {
 }
 
 .controls {
-  position: relative;
+  width: 83%;
   margin: 20px 0;
   text-align: center;
+  display: flex;
+  justify-content: space-evenly;
 }
 
 button {

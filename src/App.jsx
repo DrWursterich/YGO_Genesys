@@ -135,11 +135,6 @@ function App() {
 
   return (
     <div className="container">
-      <div className="controls">
-        <button onClick={() => setShowSpecial((prev) => !prev)}>
-          {showSpecial ? "Show 0+ Points Cards" : "Show 0 Points Staples"}
-        </button>
-      </div>
       <h1>Yu-Gi-Oh! Genesys Format Helper</h1>
       <h4>Genesys Points Update: 27 Oct, 2025</h4>
       <h5 style={{ marginBlockEnd: "unset" }}>
@@ -159,13 +154,17 @@ function App() {
         Follow them on Twitter!
       </a>
       <div className="controls">
+        <button onClick={() => setShowSpecial((prev) => !prev)}>
+          {showSpecial ? "Show 0+ Points Cards" : "Show 0 Points Staples"}
+        </button>
+
         {/* Search */}
         <input
           type="text"
           placeholder="Search cards..."
           value={search}
           onChange={(e) => setSearch(e.target.value)}
-          style={{ padding: "8px", marginRight: "10px", borderRadius: "6px" }}
+          style={{ padding: "8px", borderRadius: "6px" }}
         />
 
         {/* Points range (single or range like 100 or 10-50 or 50-10) */}
@@ -174,14 +173,14 @@ function App() {
           placeholder="Points (e.g. 100 or 10-50)"
           value={pointsFilter}
           onChange={(e) => setPointsFilter(e.target.value)}
-          style={{ padding: "8px", marginRight: "10px", borderRadius: "6px" }}
+          style={{ padding: "8px", borderRadius: "6px" }}
         />
 
         {/* Archetype dropdown */}
         <select
           value={selectedArchetype}
           onChange={(e) => setSelectedArchetype(e.target.value)}
-          style={{ padding: "8px", marginRight: "10px", borderRadius: "6px" , width: '125px'}}
+          style={{ padding: "8px", borderRadius: "6px" , width: '190px'}}
         >
           <option value="">All Archetypes</option>
           {archetypes.map((arch) => (
@@ -195,7 +194,7 @@ function App() {
         <select
           value={selectedType}
           onChange={(e) => setSelectedType(e.target.value)}
-          style={{ padding: "8px", marginRight: "10px", borderRadius: "6px" }}
+          style={{ padding: "8px", borderRadius: "6px" }}
         >
           <option value="all">All Types</option>
           {typeOrder.map((t) => (
