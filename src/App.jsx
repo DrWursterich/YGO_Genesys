@@ -20,6 +20,21 @@ function parsePointsFilter(input) {
   const s = String(input || "").trim();
   if (!s) return null;
 
+  // comparison operators: >=, <=, >, <
+  const compMatch = s.match(/^([>=<]+)\s*(\d+)$/);
+  if (compMatch) {
+    const op = compMatch[1];
+    const v = parseInt(compMatch[2], 10);
+
+    switch (op) {
+      case '>':  return { min: v + 1, max: 100 };
+      case '>=': return { min: v,     max: 100 };
+      case '<':  return { min: 0,     max: v - 1 };
+      case '<=': return { min: 0,     max: v };
+      default:   return null;
+    }
+  }
+
   // range "a-b" or "a - b"
   if (s.includes("-")) {
     const parts = s.split("-").map((p) => parseInt(p.trim(), 10));
@@ -32,6 +47,7 @@ function parsePointsFilter(input) {
   // single number
   const v = parseInt(s, 10);
   if (Number.isFinite(v)) return { min: v, max: v };
+
   return null;
 }
 
@@ -161,7 +177,7 @@ function App() {
         {/* Points range (single or range like 100 or 10-50 or 50-10) */}
         <input
           type="text"
-          placeholder="Points (e.g. 100 or 10-50)"
+          placeholder="Points (e.g. 100, 10-50, <=10)"
           value={pointsFilter}
           onChange={(e) => setPointsFilter(e.target.value)}
           style={{ padding: "8px", borderRadius: "6px" }}
