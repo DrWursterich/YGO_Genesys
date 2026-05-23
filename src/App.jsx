@@ -46,10 +46,8 @@ function App() {
   const [search, setSearch] = useState("");
   const [pointsFilter, setPointsFilter] = useState("");
 
-  // Normal cards (points > 0)
   const _cards = useMemo(() => cardsData.filter(card => card.points > 0), [cardsData])
-
-  const zeroCards = useMemo(() => cardsData.filter(c => c.points == 0), [cardsData, zeroCardsData]);
+  const zeroCards = useMemo(() => cardsData.filter(c => c.points == 0), [cardsData]);
 
   useEffect(() => {
 
@@ -129,7 +127,7 @@ function App() {
   return (
     <div className="container">
       <h1>Yu-Gi-Oh! Genesys Format Helper</h1>
-      <h4>Genesys Points Update: 27 Oct, 2025</h4>
+      <h4>Genesys Points Update: 30 Apr, 2026</h4>
       <h5 style={{ marginBlockEnd: "unset" }}>
         This is a fork from <a href="https://github.com/thehelixcore/YGO_Genesys" target="_blank" rel="noopener noreferrer">TheHelixCore</a>
       </h5>
