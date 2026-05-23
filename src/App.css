@@ -95,6 +95,7 @@ button:hover {
   font-weight: bold;
   font-size: 1rem;
   line-height: normal;
+  word-break: break-word;
   margin: auto;
   color: #0077cc;
   text-decoration: none;
