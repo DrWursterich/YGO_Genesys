@@ -1,6 +1,5 @@
 import { useEffect, useState, useMemo } from "react";
 import cardsData from "./data/cards.json";
-import zeroCardsData from "./data/staplesZero.json";
 import "./App.css";
 import ChangelogPopup from "./ChangelogPopup";
 import { changelog, CHANGELOG_VERSION } from "./data/changelog";
@@ -50,13 +49,7 @@ function App() {
   // Normal cards (points > 0)
   const _cards = useMemo(() => cardsData.filter(card => card.points > 0), [cardsData])
 
-  const zeroCards = useMemo(
-    () =>
-      cardsData
-      .filter(c => c.points == 0)
-      .filter(c => zeroCardsData.includes(c.name)),
-    [cardsData, zeroCardsData]
-  );
+  const zeroCards = useMemo(() => cardsData.filter(c => c.points == 0), [cardsData, zeroCardsData]);
 
   useEffect(() => {
 
