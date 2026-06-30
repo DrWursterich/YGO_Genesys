@@ -143,7 +143,7 @@ function App() {
   return (
     <div className="container">
       <h1>Yu-Gi-Oh! Genesys Format Helper</h1>
-      <h4>Genesys Points Update: 08 June, 2026</h4>
+      <h4>Genesys Points Update: 23 June, 2026</h4>
       <h5 style={{ marginBlockEnd: "unset" }}>
         This is a fork from <a href="https://github.com/thehelixcore/YGO_Genesys" target="_blank" rel="noopener noreferrer">TheHelixCore</a>
       </h5>
