@@ -9,6 +9,15 @@
     "points": 20
   },
   {
+    "id": 8949584,
+    "name": "A Hero Lives",
+    "type": "spell",
+    "url": "https://ygoprodeck.com/card/a-hero-lives-757",
+    "archetype": "Elemental HERO",
+    "image": "https://images.ygoprodeck.com/images/cards_small/8949584.jpg",
+    "points": 8
+  },
+  {
     "id": 21044178,
     "name": "Abyss Dweller",
     "type": "xyz",
@@ -16,15 +25,6 @@
     "archetype": null,
     "image": "https://images.ygoprodeck.com/images/cards_small/21044178.jpg",
     "points": 100
-  },
-  {
-    "id": 86132414,
-    "name": "Abyss of the Sacred Beasts",
-    "type": "trap",
-    "url": "https://ygoprodeck.com/card/abyss-of-the-sacred-beasts-15592",
-    "archetype": "Phantasm",
-    "image": "https://images.ygoprodeck.com/images/cards_small/86132414.jpg",
-    "points": 1
   },
   {
     "id": 9464441,
@@ -45,15 +45,6 @@
     "points": 50
   },
   {
-    "id": 84288367,
-    "name": "Aiwass, Divine Spirit of the Law",
-    "type": "effect",
-    "url": "https://ygoprodeck.com/card/aiwass-divine-spirit-of-the-law-15684",
-    "archetype": null,
-    "image": "https://images.ygoprodeck.com/images/cards_small/84288367.jpg",
-    "points": 2
-  },
-  {
     "id": 87746184,
     "name": "Albion the Branded Dragon",
     "type": "fusion",
@@ -70,15 +61,6 @@
     "archetype": "Albaz Dragon",
     "image": "https://images.ygoprodeck.com/images/cards_small/38811586.jpg",
     "points": 33
-  },
-  {
-    "id": 57294268,
-    "name": "Aleister the Reminiscent",
-    "type": "effect",
-    "url": "https://ygoprodeck.com/card/aleister-the-reminiscent-15686",
-    "archetype": "Aleister",
-    "image": "https://images.ygoprodeck.com/images/cards_small/57294268.jpg",
-    "points": 4
   },
   {
     "id": 1475311,
@@ -187,6 +169,15 @@
     "archetype": "Arcana Force",
     "image": "https://images.ygoprodeck.com/images/cards_small/23846921.jpg",
     "points": 100
+  },
+  {
+    "id": 82997779,
+    "name": "Archfiend's Usurpation",
+    "type": "spell",
+    "url": "https://ygoprodeck.com/card/archfiend-s-usurpation-15498",
+    "archetype": "Archfiend",
+    "image": "https://images.ygoprodeck.com/images/cards_small/82997779.jpg",
+    "points": 3
   },
   {
     "id": 59509952,
@@ -459,15 +450,6 @@
     "points": 15
   },
   {
-    "id": 98684220,
-    "name": "Black Chaos",
-    "type": "effect",
-    "url": "https://ygoprodeck.com/card/black-chaos-15560",
-    "archetype": "Light and Darkness Ritual",
-    "image": "https://images.ygoprodeck.com/images/cards_small/98684220.jpg",
-    "points": 20
-  },
-  {
     "id": 71645242,
     "name": "Black Garden",
     "type": "spell",
@@ -501,7 +483,7 @@
     "url": "https://ygoprodeck.com/card/blackwing-boreastorm-the-wicked-wind-13276",
     "archetype": "Blackwing",
     "image": "https://images.ygoprodeck.com/images/cards_small/10602628.jpg",
-    "points": 20
+    "points": 15
   },
   {
     "id": 14785765,
@@ -555,7 +537,7 @@
     "url": "https://ygoprodeck.com/card/bonfire-13988",
     "archetype": null,
     "image": "https://images.ygoprodeck.com/images/cards_small/85106525.jpg",
-    "points": 33
+    "points": 15
   },
   {
     "id": 35480699,
@@ -774,15 +756,6 @@
     "points": 5
   },
   {
-    "id": 50073633,
-    "name": "Celtic Mystic",
-    "type": "effect",
-    "url": "https://ygoprodeck.com/card/celtic-mystic-15554",
-    "archetype": "Light and Darkness Ritual",
-    "image": "https://images.ygoprodeck.com/images/cards_small/50073633.jpg",
-    "points": 20
-  },
-  {
     "id": 71858682,
     "name": "Centur-Ion Auxila",
     "type": "synchro",
@@ -870,7 +843,7 @@
     "url": "https://ygoprodeck.com/card/chaos-space-11212",
     "archetype": "Chaos",
     "image": "https://images.ygoprodeck.com/images/cards_small/99266988.jpg",
-    "points": 40
+    "points": 13
   },
   {
     "id": 94886282,
@@ -891,6 +864,15 @@
     "points": 10
   },
   {
+    "id": 2609443,
+    "name": "Chronomaly Vimana",
+    "type": "xyz",
+    "url": "https://ygoprodeck.com/card/chronomaly-vimana-12172",
+    "archetype": "Chronomaly",
+    "image": "https://images.ygoprodeck.com/images/cards_small/2609443.jpg",
+    "points": 10
+  },
+  {
     "id": 84797028,
     "name": "Clockwork Night",
     "type": "spell",
@@ -907,6 +889,15 @@
     "archetype": "Clown Crew",
     "image": "https://images.ygoprodeck.com/images/cards_small/82159583.jpg",
     "points": 1
+  },
+  {
+    "id": 42759961,
+    "name": "Clown Crew Flair",
+    "type": "ritual",
+    "url": "https://ygoprodeck.com/card/clown-crew-flair-15458",
+    "archetype": "Clown Crew",
+    "image": "https://images.ygoprodeck.com/images/cards_small/42759961.jpg",
+    "points": 5
   },
   {
     "id": 83232904,
@@ -963,13 +954,13 @@
     "points": 100
   },
   {
-    "id": 33302589,
-    "name": "Constellar Castor",
-    "type": "effect",
-    "url": "https://ygoprodeck.com/card/constellar-castor-15404",
+    "id": 10125011,
+    "name": "Constellar Tellarknights",
+    "type": "spell",
+    "url": "https://ygoprodeck.com/card/constellar-tellarknights-13667",
     "archetype": "Constellar",
-    "image": "https://images.ygoprodeck.com/images/cards_small/33302589.jpg",
-    "points": 6
+    "image": "https://images.ygoprodeck.com/images/cards_small/10125011.jpg",
+    "points": 1
   },
   {
     "id": 87170768,
@@ -1006,15 +997,6 @@
     "archetype": null,
     "image": "https://images.ygoprodeck.com/images/cards_small/8267140.jpg",
     "points": 1
-  },
-  {
-    "id": 58916810,
-    "name": "Crackle Blitzclique",
-    "type": "effect",
-    "url": "https://ygoprodeck.com/card/crackle-blitzclique-15612",
-    "archetype": "Blitzclique",
-    "image": "https://images.ygoprodeck.com/images/cards_small/58916810.jpg",
-    "points": 4
   },
   {
     "id": 31036355,
@@ -1071,6 +1053,24 @@
     "points": 3
   },
   {
+    "id": 3422200,
+    "name": "Crystron Sulfefnir",
+    "type": "effect",
+    "url": "https://ygoprodeck.com/card/crystron-sulfefnir-304",
+    "archetype": "Crystron",
+    "image": "https://images.ygoprodeck.com/images/cards_small/3422200.jpg",
+    "points": 2
+  },
+  {
+    "id": 99471856,
+    "name": "Crystron Tristaros",
+    "type": "effect",
+    "url": "https://ygoprodeck.com/card/crystron-tristaros-14722",
+    "archetype": "Crystron",
+    "image": "https://images.ygoprodeck.com/images/cards_small/99471856.jpg",
+    "points": 2
+  },
+  {
     "id": 3685372,
     "name": "CXyz Gimmick Puppet Fanatix Machinix",
     "type": "xyz",
@@ -1122,7 +1122,7 @@
     "url": "https://ygoprodeck.com/card/d-d-crow-2116",
     "archetype": "D.D.",
     "image": "https://images.ygoprodeck.com/images/cards_small/24508238.jpg",
-    "points": 1
+    "points": 2
   },
   {
     "id": 8628798,
@@ -1314,6 +1314,15 @@
     "points": 7
   },
   {
+    "id": 64414267,
+    "name": "Darktellarknight Batlamyus",
+    "type": "xyz",
+    "url": "https://ygoprodeck.com/card/darktellarknight-batlamyus-5439",
+    "archetype": "Tellarknight",
+    "image": "https://images.ygoprodeck.com/images/cards_small/64414267.jpg",
+    "points": 1
+  },
+  {
     "id": 66328392,
     "name": "Deception of the Sinful Spoils",
     "type": "spell",
@@ -1338,7 +1347,7 @@
     "url": "https://ygoprodeck.com/card/deep-sea-aria-10769",
     "archetype": null,
     "image": "https://images.ygoprodeck.com/images/cards_small/72060415.jpg",
-    "points": 33
+    "points": 12
   },
   {
     "id": 44763025,
@@ -1707,7 +1716,7 @@
     "url": "https://ygoprodeck.com/card/dragonic-diagram-8341",
     "archetype": "True Draco",
     "image": "https://images.ygoprodeck.com/images/cards_small/13035077.jpg",
-    "points": 10
+    "points": 5
   },
   {
     "id": 24799107,
@@ -1824,7 +1833,7 @@
     "url": "https://ygoprodeck.com/card/el-shaddoll-apkallone-10698",
     "archetype": "Shaddoll",
     "image": "https://images.ygoprodeck.com/images/cards_small/50907446.jpg",
-    "points": 10
+    "points": 1
   },
   {
     "id": 94977269,
@@ -1833,7 +1842,7 @@
     "url": "https://ygoprodeck.com/card/el-shaddoll-winda-7907",
     "archetype": "Shaddoll",
     "image": "https://images.ygoprodeck.com/images/cards_small/94977269.jpg",
-    "points": 60
+    "points": 100
   },
   {
     "id": 80532587,
@@ -1863,13 +1872,13 @@
     "points": 21
   },
   {
-    "id": 5559570,
-    "name": "Elfnote June Pride",
-    "type": "synchro",
-    "url": "https://ygoprodeck.com/card/elfnote-june-pride-15674",
+    "id": 13597785,
+    "name": "Elfnote Lucina",
+    "type": "effect",
+    "url": "https://ygoprodeck.com/card/elfnote-lucina-15345",
     "archetype": "Elfnote",
-    "image": "https://images.ygoprodeck.com/images/cards_small/5559570.jpg",
-    "points": 25
+    "image": "https://images.ygoprodeck.com/images/cards_small/13597785.jpg",
+    "points": 1
   },
   {
     "id": 12375297,
@@ -1890,6 +1899,15 @@
     "points": 40
   },
   {
+    "id": 59581480,
+    "name": "Elfnote Tinia",
+    "type": "effect",
+    "url": "https://ygoprodeck.com/card/elfnote-tinia-15347",
+    "archetype": "Elfnote",
+    "image": "https://images.ygoprodeck.com/images/cards_small/59581480.jpg",
+    "points": 3
+  },
+  {
     "id": 38648860,
     "name": "Elzette, Azamina of the White Forest",
     "type": "effect",
@@ -1905,7 +1923,7 @@
     "url": "https://ygoprodeck.com/card/emergency-teleport-5689",
     "archetype": null,
     "image": "https://images.ygoprodeck.com/images/cards_small/67723438.jpg",
-    "points": 35
+    "points": 25
   },
   {
     "id": 61292243,
@@ -2079,13 +2097,40 @@
     "points": 0
   },
   {
+    "id": 19144622,
+    "name": "Fairy Tail - Matchgiru",
+    "type": "effect",
+    "url": "https://ygoprodeck.com/card/fairy-tail-matchgiru-15511",
+    "archetype": "Fairy Tail",
+    "image": "https://images.ygoprodeck.com/images/cards_small/19144622.jpg",
+    "points": 5
+  },
+  {
     "id": 55623480,
     "name": "Fairy Tail - Snow",
     "type": "effect",
     "url": "https://ygoprodeck.com/card/fairy-tail-snow-4737",
     "archetype": null,
     "image": "https://images.ygoprodeck.com/images/cards_small/55623480.jpg",
-    "points": 85
+    "points": 10
+  },
+  {
+    "id": 27632520,
+    "name": "Fairy Tail - Wiccat",
+    "type": "xyz",
+    "url": "https://ygoprodeck.com/card/fairy-tail-wiccat-15502",
+    "archetype": "Fairy Tail",
+    "image": "https://images.ygoprodeck.com/images/cards_small/27632520.jpg",
+    "points": 10
+  },
+  {
+    "id": 56725612,
+    "name": "Fairy Tail Ball",
+    "type": "spell",
+    "url": "https://ygoprodeck.com/card/fairy-tail-ball-15503",
+    "archetype": "Fairy Tail",
+    "image": "https://images.ygoprodeck.com/images/cards_small/56725612.jpg",
+    "points": 10
   },
   {
     "id": 73819701,
@@ -2139,7 +2184,7 @@
     "url": "https://ygoprodeck.com/card/fire-formation-tenki-4866",
     "archetype": "Fire Formation",
     "image": "https://images.ygoprodeck.com/images/cards_small/57103969.jpg",
-    "points": 35
+    "points": 11
   },
   {
     "id": 44455560,
@@ -2157,7 +2202,7 @@
     "url": "https://ygoprodeck.com/card/fire-king-high-avatar-kirin-14051",
     "archetype": "Fire King",
     "image": "https://images.ygoprodeck.com/images/cards_small/2526224.jpg",
-    "points": 7
+    "points": 5
   },
   {
     "id": 93369354,
@@ -2265,7 +2310,7 @@
     "url": "https://ygoprodeck.com/card/fossil-dig-4036",
     "archetype": null,
     "image": "https://images.ygoprodeck.com/images/cards_small/47325505.jpg",
-    "points": 33
+    "points": 18
   },
   {
     "id": 42009836,
@@ -2391,6 +2436,15 @@
     "url": "https://ygoprodeck.com/card/gameciel-the-sea-turtle-kaiju-4690",
     "archetype": "Kaiju",
     "image": "https://images.ygoprodeck.com/images/cards_small/55063751.jpg",
+    "points": 3
+  },
+  {
+    "id": 64182380,
+    "name": "Garunix Eternity, Hyang of the Fire Kings",
+    "type": "xyz",
+    "url": "https://ygoprodeck.com/card/garunix-eternity-hyang-of-the-fire-kings-14127",
+    "archetype": "Fire King",
+    "image": "https://images.ygoprodeck.com/images/cards_small/64182380.jpg",
     "points": 3
   },
   {
@@ -2565,15 +2619,6 @@
     "points": 80
   },
   {
-    "id": 32044675,
-    "name": "Glitch Clutch Nullgainer",
-    "type": "synchro",
-    "url": "https://ygoprodeck.com/card/glitch-clutch-nullgainer-15659",
-    "archetype": null,
-    "image": "https://images.ygoprodeck.com/images/cards_small/32044675.jpg",
-    "points": 10
-  },
-  {
     "id": 67441435,
     "name": "Glow-Up Bulb",
     "type": "effect",
@@ -2598,7 +2643,7 @@
     "url": "https://ygoprodeck.com/card/goblin-biker-big-gabonga-14172",
     "archetype": "Goblin",
     "image": "https://images.ygoprodeck.com/images/cards_small/34001672.jpg",
-    "points": 12
+    "points": 10
   },
   {
     "id": 29111045,
@@ -2616,7 +2661,7 @@
     "url": "https://ygoprodeck.com/card/goblin-biker-grand-entrance-14179",
     "archetype": "Goblin",
     "image": "https://images.ygoprodeck.com/images/cards_small/90711610.jpg",
-    "points": 20
+    "points": 15
   },
   {
     "id": 75500286,
@@ -2698,15 +2743,6 @@
     "archetype": "Gravekeeper's",
     "image": "https://images.ygoprodeck.com/images/cards_small/59494222.jpg",
     "points": 0
-  },
-  {
-    "id": 97462632,
-    "name": "Griffoh",
-    "type": "effect",
-    "url": "https://ygoprodeck.com/card/griffoh-15555",
-    "archetype": "Light and Darkness Ritual",
-    "image": "https://images.ygoprodeck.com/images/cards_small/97462632.jpg",
-    "points": 10
   },
   {
     "id": 22888900,
@@ -2887,15 +2923,6 @@
     "archetype": "Rank-Up-Magic",
     "image": "https://images.ygoprodeck.com/images/cards_small/67517351.jpg",
     "points": 1
-  },
-  {
-    "id": 33166263,
-    "name": "Hyperinvoked Aeon",
-    "type": "fusion",
-    "url": "https://ygoprodeck.com/card/hyperinvoked-aeon-15681",
-    "archetype": "Invoked",
-    "image": "https://images.ygoprodeck.com/images/cards_small/33166263.jpg",
-    "points": 15
   },
   {
     "id": 20899496,
@@ -3085,15 +3112,6 @@
     "archetype": null,
     "image": "https://images.ygoprodeck.com/images/cards_small/41855169.jpg",
     "points": 100
-  },
-  {
-    "id": 73218792,
-    "name": "Junk Meister",
-    "type": "effect",
-    "url": "https://ygoprodeck.com/card/junk-meister-15418",
-    "archetype": "Junk",
-    "image": "https://images.ygoprodeck.com/images/cards_small/73218792.jpg",
-    "points": 6
   },
   {
     "id": 77075360,
@@ -3480,7 +3498,7 @@
     "url": "https://ygoprodeck.com/card/legendary-fire-king-ponix-14136",
     "archetype": "Fire King",
     "image": "https://images.ygoprodeck.com/images/cards_small/90681088.jpg",
-    "points": 10
+    "points": 7
   },
   {
     "id": 34235530,
@@ -3498,15 +3516,6 @@
     "url": "https://ygoprodeck.com/card/legendary-six-samurai-shi-en-2540",
     "archetype": "Six Samurai",
     "image": "https://images.ygoprodeck.com/images/cards_small/29981921.jpg",
-    "points": 10
-  },
-  {
-    "id": 34950192,
-    "name": "Lev Shaddoll Fusion",
-    "type": "spell",
-    "url": "https://ygoprodeck.com/card/lev-shaddoll-fusion-15395",
-    "archetype": "Fusion",
-    "image": "https://images.ygoprodeck.com/images/cards_small/34950192.jpg",
     "points": 10
   },
   {
@@ -3537,15 +3546,6 @@
     "points": 20
   },
   {
-    "id": 33599853,
-    "name": "Light and Darkness Ritual",
-    "type": "spell",
-    "url": "https://ygoprodeck.com/card/light-and-darkness-ritual-15556",
-    "archetype": "Light and Darkness Ritual",
-    "image": "https://images.ygoprodeck.com/images/cards_small/33599853.jpg",
-    "points": 5
-  },
-  {
     "id": 73206827,
     "name": "Light Barrier",
     "type": "spell",
@@ -3561,6 +3561,15 @@
     "url": "https://ygoprodeck.com/card/light-end-sublimation-dragon-14458",
     "archetype": "Light and Darkness Dragon",
     "image": "https://images.ygoprodeck.com/images/cards_small/35614780.jpg",
+    "points": 1
+  },
+  {
+    "id": 40672993,
+    "name": "Lightning Rod Lord",
+    "type": "effect",
+    "url": "https://ygoprodeck.com/card/lightning-rod-lord-3461",
+    "archetype": null,
+    "image": "https://images.ygoprodeck.com/images/cards_small/40672993.jpg",
     "points": 1
   },
   {
@@ -3597,7 +3606,7 @@
     "url": "https://ygoprodeck.com/card/lonefire-blossom-4158",
     "archetype": null,
     "image": "https://images.ygoprodeck.com/images/cards_small/48686504.jpg",
-    "points": 33
+    "points": 10
   },
   {
     "id": 24348804,
@@ -3750,7 +3759,7 @@
     "url": "https://ygoprodeck.com/card/magicians-souls-10601",
     "archetype": "Dark Magician",
     "image": "https://images.ygoprodeck.com/images/cards_small/97631303.jpg",
-    "points": 15
+    "points": 10
   },
   {
     "id": 65514302,
@@ -3789,15 +3798,6 @@
     "points": 100
   },
   {
-    "id": 59138498,
-    "name": "Martyr of the Sacred Beasts",
-    "type": "effect",
-    "url": "https://ygoprodeck.com/card/martyr-of-the-sacred-beasts-15599",
-    "archetype": "Phantasm",
-    "image": "https://images.ygoprodeck.com/images/cards_small/59138498.jpg",
-    "points": 2
-  },
-  {
     "id": 58481572,
     "name": "Masked HERO Dark Law",
     "type": "fusion",
@@ -3805,15 +3805,6 @@
     "archetype": "HERO",
     "image": "https://images.ygoprodeck.com/images/cards_small/58481572.jpg",
     "points": 70
-  },
-  {
-    "id": 66206748,
-    "name": "Masked HERO Fountain",
-    "type": "effect",
-    "url": "https://ygoprodeck.com/card/masked-hero-fountain-15432",
-    "archetype": "Masked HERO",
-    "image": "https://images.ygoprodeck.com/images/cards_small/66206748.jpg",
-    "points": 6
   },
   {
     "id": 6855503,
@@ -3886,6 +3877,15 @@
     "archetype": "Megalith",
     "image": "https://images.ygoprodeck.com/images/cards_small/29876299.jpg",
     "points": 33
+  },
+  {
+    "id": 76981308,
+    "name": "Melffy Staring Contest",
+    "type": "spell",
+    "url": "https://ygoprodeck.com/card/melffy-staring-contest-13192",
+    "archetype": "Melffy",
+    "image": "https://images.ygoprodeck.com/images/cards_small/76981308.jpg",
+    "points": 2
   },
   {
     "id": 14529511,
@@ -4012,15 +4012,6 @@
     "archetype": null,
     "image": "https://images.ygoprodeck.com/images/cards_small/96782886.jpg",
     "points": 1
-  },
-  {
-    "id": 24749710,
-    "name": "Mind Shuffle",
-    "type": "trap",
-    "url": "https://ygoprodeck.com/card/mind-shuffle-15552",
-    "archetype": "Light and Darkness Ritual",
-    "image": "https://images.ygoprodeck.com/images/cards_small/24749710.jpg",
-    "points": 40
   },
   {
     "id": 30875635,
@@ -4290,7 +4281,7 @@
     "url": "https://ygoprodeck.com/card/nerva-the-power-patron-of-creation-15056",
     "archetype": "Power Patron",
     "image": "https://images.ygoprodeck.com/images/cards_small/53589300.jpg",
-    "points": 5
+    "points": 6
   },
   {
     "id": 27204311,
@@ -4299,7 +4290,7 @@
     "url": "https://ygoprodeck.com/card/nibiru-the-primal-being-10564",
     "archetype": null,
     "image": "https://images.ygoprodeck.com/images/cards_small/27204311.jpg",
-    "points": 6
+    "points": 8
   },
   {
     "id": 58143852,
@@ -4515,7 +4506,7 @@
     "url": "https://ygoprodeck.com/card/number-86-heroic-champion-rhongomyniad-5364",
     "archetype": "Heroic",
     "image": "https://images.ygoprodeck.com/images/cards_small/63504681.jpg",
-    "points": 68
+    "points": 100
   },
   {
     "id": 95474755,
@@ -4653,15 +4644,6 @@
     "points": 0
   },
   {
-    "id": 76213610,
-    "name": "Officiator of Doom Samuel",
-    "type": "xyz",
-    "url": "https://ygoprodeck.com/card/officiator-of-doom-samuel-15728",
-    "archetype": "Death",
-    "image": "https://images.ygoprodeck.com/images/cards_small/76213610.jpg",
-    "points": 10
-  },
-  {
     "id": 81260679,
     "name": "Ohime the Manifested Mikanko",
     "type": "ritual",
@@ -4704,7 +4686,7 @@
     "url": "https://ygoprodeck.com/card/one-for-one-202",
     "archetype": null,
     "image": "https://images.ygoprodeck.com/images/cards_small/2295440.jpg",
-    "points": 91
+    "points": 19
   },
   {
     "id": 6595475,
@@ -4722,7 +4704,7 @@
     "url": "https://ygoprodeck.com/card/original-sinful-spoils-snake-eye-14033",
     "archetype": "Snake-Eye",
     "image": "https://images.ygoprodeck.com/images/cards_small/89023486.jpg",
-    "points": 100
+    "points": 17
   },
   {
     "id": 34945480,
@@ -4732,15 +4714,6 @@
     "archetype": null,
     "image": "https://images.ygoprodeck.com/images/cards_small/34945480.jpg",
     "points": 100
-  },
-  {
-    "id": 613496,
-    "name": "Over Tuning",
-    "type": "spell",
-    "url": "https://ygoprodeck.com/card/over-tuning-15421",
-    "archetype": null,
-    "image": "https://images.ygoprodeck.com/images/cards_small/613496.jpg",
-    "points": 10
   },
   {
     "id": 28403802,
@@ -4788,15 +4761,6 @@
     "points": 88
   },
   {
-    "id": 82344137,
-    "name": "Phara the Primordial Goddess",
-    "type": "effect",
-    "url": "https://ygoprodeck.com/card/phara-the-primordial-goddess-15710",
-    "archetype": null,
-    "image": "https://images.ygoprodeck.com/images/cards_small/82344137.jpg",
-    "points": 20
-  },
-  {
     "id": 45742626,
     "name": "Pilgrim Reaper",
     "type": "xyz",
@@ -4830,7 +4794,7 @@
     "url": "https://ygoprodeck.com/card/pot-of-desires-2990",
     "archetype": "Greed",
     "image": "https://images.ygoprodeck.com/images/cards_small/35261759.jpg",
-    "points": 15
+    "points": 10
   },
   {
     "id": 98645731,
@@ -4867,15 +4831,6 @@
     "archetype": "Greed",
     "image": "https://images.ygoprodeck.com/images/cards_small/84211599.jpg",
     "points": 40
-  },
-  {
-    "id": 98476659,
-    "name": "Pot of Sloth",
-    "type": "spell",
-    "url": "https://ygoprodeck.com/card/pot-of-sloth-15711",
-    "archetype": "Greed",
-    "image": "https://images.ygoprodeck.com/images/cards_small/98476659.jpg",
-    "points": 10
   },
   {
     "id": 19434243,
@@ -5049,6 +5004,15 @@
     "points": 10
   },
   {
+    "id": 82105704,
+    "name": "Purrely Happy Memory",
+    "type": "spell",
+    "url": "https://ygoprodeck.com/card/purrely-happy-memory-13448",
+    "archetype": "Purrely",
+    "image": "https://images.ygoprodeck.com/images/cards_small/82105704.jpg",
+    "points": 2
+  },
+  {
     "id": 21347668,
     "name": "Purrely Sleepy Memory",
     "type": "spell",
@@ -5064,7 +5028,7 @@
     "url": "https://ygoprodeck.com/card/purrelyly-13659",
     "archetype": "Purrely",
     "image": "https://images.ygoprodeck.com/images/cards_small/79933029.jpg",
-    "points": 7
+    "points": 5
   },
   {
     "id": 84673574,
@@ -5091,7 +5055,7 @@
     "url": "https://ygoprodeck.com/card/quick-launch-8842",
     "archetype": "Rokket",
     "image": "https://images.ygoprodeck.com/images/cards_small/31443476.jpg",
-    "points": 33
+    "points": 25
   },
   {
     "id": 74875003,
@@ -5148,15 +5112,6 @@
     "points": 10
   },
   {
-    "id": 24461358,
-    "name": "Ragged Records of Rites",
-    "type": "spell",
-    "url": "https://ygoprodeck.com/card/ragged-records-of-rites-15694",
-    "archetype": null,
-    "image": "https://images.ygoprodeck.com/images/cards_small/24461358.jpg",
-    "points": 10
-  },
-  {
     "id": 32548318,
     "name": "Rahu Dracotail",
     "type": "spell",
@@ -5181,7 +5136,7 @@
     "url": "https://ygoprodeck.com/card/raigeki-1087",
     "archetype": null,
     "image": "https://images.ygoprodeck.com/images/cards_small/12580477.jpg",
-    "points": 4
+    "points": 2
   },
   {
     "id": 5611760,
@@ -5451,7 +5406,7 @@
     "url": "https://ygoprodeck.com/card/reinforcement-of-the-army-2794",
     "archetype": null,
     "image": "https://images.ygoprodeck.com/images/cards_small/32807846.jpg",
-    "points": 33
+    "points": 18
   },
   {
     "id": 65734501,
@@ -5553,6 +5508,15 @@
     "points": 60
   },
   {
+    "id": 58769832,
+    "name": "Royal Archfiend",
+    "type": "effect",
+    "url": "https://ygoprodeck.com/card/royal-archfiend-15297",
+    "archetype": "Archfiend",
+    "image": "https://images.ygoprodeck.com/images/cards_small/58769832.jpg",
+    "points": 7
+  },
+  {
     "id": 51452091,
     "name": "Royal Decree",
     "type": "trap",
@@ -5605,15 +5569,6 @@
     "archetype": "Ryzeal",
     "image": "https://images.ygoprodeck.com/images/cards_small/7511613.jpg",
     "points": 20
-  },
-  {
-    "id": 1259915,
-    "name": "Sacred Beasts Thunderclap",
-    "type": "spell",
-    "url": "https://ygoprodeck.com/card/sacred-beasts-thunderclap-15595",
-    "archetype": "Phantasm",
-    "image": "https://images.ygoprodeck.com/images/cards_small/1259915.jpg",
-    "points": 2
   },
   {
     "id": 64964750,
@@ -5724,13 +5679,31 @@
     "points": 33
   },
   {
+    "id": 7477101,
+    "name": "Seventh Tachyon",
+    "type": "spell",
+    "url": "https://ygoprodeck.com/card/seventh-tachyon-14499",
+    "archetype": "Seventh",
+    "image": "https://images.ygoprodeck.com/images/cards_small/7477101.jpg",
+    "points": 11
+  },
+  {
+    "id": 44394295,
+    "name": "Shaddoll Fusion",
+    "type": "spell",
+    "url": "https://ygoprodeck.com/card/shaddoll-fusion-3784",
+    "archetype": "Shaddoll",
+    "image": "https://images.ygoprodeck.com/images/cards_small/44394295.jpg",
+    "points": 3
+  },
+  {
     "id": 21011044,
     "name": "Shaddoll Schism",
     "type": "trap",
     "url": "https://ygoprodeck.com/card/shaddoll-schism-10931",
     "archetype": "Shaddoll",
     "image": "https://images.ygoprodeck.com/images/cards_small/21011044.jpg",
-    "points": 10
+    "points": 1
   },
   {
     "id": 1372887,
@@ -6183,15 +6156,6 @@
     "points": 100
   },
   {
-    "id": 22734799,
-    "name": "Summoner of the Sacred Beasts",
-    "type": "effect",
-    "url": "https://ygoprodeck.com/card/summoner-of-the-sacred-beasts-15594",
-    "archetype": "Phantasm",
-    "image": "https://images.ygoprodeck.com/images/cards_small/22734799.jpg",
-    "points": 5
-  },
-  {
     "id": 48130397,
     "name": "Super Polymerization",
     "type": "spell",
@@ -6219,13 +6183,13 @@
     "points": 10
   },
   {
-    "id": 51869363,
-    "name": "Superconductive Plasma Blast",
-    "type": "spell",
-    "url": "https://ygoprodeck.com/card/superconductive-plasma-blast-15676",
-    "archetype": null,
-    "image": "https://images.ygoprodeck.com/images/cards_small/51869363.jpg",
-    "points": 5
+    "id": 56910167,
+    "name": "Superdreadnought Rail Cannon Gustav Max",
+    "type": "xyz",
+    "url": "https://ygoprodeck.com/card/superdreadnought-rail-cannon-gustav-max-4849",
+    "archetype": "Train",
+    "image": "https://images.ygoprodeck.com/images/cards_small/56910167.jpg",
+    "points": 10
   },
   {
     "id": 43387895,
@@ -6235,15 +6199,6 @@
     "archetype": "Supreme King",
     "image": "https://images.ygoprodeck.com/images/cards_small/43387895.jpg",
     "points": 1
-  },
-  {
-    "id": 22912101,
-    "name": "Surge Blitzclique",
-    "type": "effect",
-    "url": "https://ygoprodeck.com/card/surge-blitzclique-15609",
-    "archetype": "Blitzclique",
-    "image": "https://images.ygoprodeck.com/images/cards_small/22912101.jpg",
-    "points": 4
   },
   {
     "id": 9126351,
@@ -6279,7 +6234,7 @@
     "url": "https://ygoprodeck.com/card/swordsoul-emergence-12470",
     "archetype": "Swordsoul",
     "image": "https://images.ygoprodeck.com/images/cards_small/56465981.jpg",
-    "points": 7
+    "points": 2
   },
   {
     "id": 69248256,
@@ -6372,22 +6327,13 @@
     "points": 100
   },
   {
-    "id": 32289031,
-    "name": "Tellarknight Constellar Delteros",
-    "type": "xyz",
-    "url": "https://ygoprodeck.com/card/tellarknight-constellar-delteros-15401",
-    "archetype": "Constellar",
-    "image": "https://images.ygoprodeck.com/images/cards_small/32289031.jpg",
-    "points": 10
-  },
-  {
-    "id": 60700283,
-    "name": "Tellarknight Cygnian",
+    "id": 79210531,
+    "name": "Tellarknight Lyran",
     "type": "effect",
-    "url": "https://ygoprodeck.com/card/tellarknight-cygnian-15403",
+    "url": "https://ygoprodeck.com/card/tellarknight-lyran-13669",
     "archetype": "Constellar",
-    "image": "https://images.ygoprodeck.com/images/cards_small/60700283.jpg",
-    "points": 6
+    "image": "https://images.ygoprodeck.com/images/cards_small/79210531.jpg",
+    "points": 5
   },
   {
     "id": 18326736,
@@ -6432,7 +6378,7 @@
     "url": "https://ygoprodeck.com/card/terraforming-6182",
     "archetype": null,
     "image": "https://images.ygoprodeck.com/images/cards_small/73628505.jpg",
-    "points": 33
+    "points": 20
   },
   {
     "id": 63086455,
@@ -6490,7 +6436,7 @@
   },
   {
     "id": 30271097,
-    "name": "The Fallen &amp; The Virtuous",
+    "name": "The Fallen & The Virtuous",
     "type": "spell",
     "url": "https://ygoprodeck.com/card/the-fallen-the-virtuous-15383",
     "archetype": "Branded",
@@ -6552,22 +6498,13 @@
     "points": 50
   },
   {
-    "id": 46072770,
-    "name": "The Phantom Knights of Decayed Cloak",
-    "type": "effect",
-    "url": "https://ygoprodeck.com/card/the-phantom-knights-of-decayed-cloak-15617",
-    "archetype": "Phantom Knights",
-    "image": "https://images.ygoprodeck.com/images/cards_small/46072770.jpg",
-    "points": 4
-  },
-  {
-    "id": 78449284,
-    "name": "The Phantom Knights of Malevolent Scythe",
+    "id": 62709239,
+    "name": "The Phantom Knights of Break Sword",
     "type": "xyz",
-    "url": "https://ygoprodeck.com/card/the-phantom-knights-of-malevolent-scythe-15615",
+    "url": "https://ygoprodeck.com/card/the-phantom-knights-of-break-sword-5297",
     "archetype": "Phantom Knights",
-    "image": "https://images.ygoprodeck.com/images/cards_small/78449284.jpg",
-    "points": 12
+    "image": "https://images.ygoprodeck.com/images/cards_small/62709239.jpg",
+    "points": 1
   },
   {
     "id": 3298689,
@@ -6576,15 +6513,6 @@
     "url": "https://ygoprodeck.com/card/the-phantom-knights-rank-up-magic-launch-297",
     "archetype": "Phantom Knights",
     "image": "https://images.ygoprodeck.com/images/cards_small/3298689.jpg",
-    "points": 1
-  },
-  {
-    "id": 62104532,
-    "name": "The Phantom Knights' Rank-Up-Magic Requiem",
-    "type": "spell",
-    "url": "https://ygoprodeck.com/card/the-phantom-knights-rank-up-magic-requiem-15613",
-    "archetype": "Phantom Knights",
-    "image": "https://images.ygoprodeck.com/images/cards_small/62104532.jpg",
     "points": 1
   },
   {
@@ -6642,15 +6570,6 @@
     "points": 5
   },
   {
-    "id": 36709484,
-    "name": "Theorealize Past Lull",
-    "type": "spell",
-    "url": "https://ygoprodeck.com/card/theorealize-past-lull-15671",
-    "archetype": "Theorealize",
-    "image": "https://images.ygoprodeck.com/images/cards_small/36709484.jpg",
-    "points": 5
-  },
-  {
     "id": 24207889,
     "name": "There Can Be Only One",
     "type": "trap",
@@ -6666,7 +6585,7 @@
     "url": "https://ygoprodeck.com/card/therion-king-regulus-13016",
     "archetype": "Therion",
     "image": "https://images.ygoprodeck.com/images/cards_small/10604644.jpg",
-    "points": 20
+    "points": 33
   },
   {
     "id": 15291624,
@@ -6694,6 +6613,15 @@
     "archetype": "Kaiju",
     "image": "https://images.ygoprodeck.com/images/cards_small/48770333.jpg",
     "points": 0
+  },
+  {
+    "id": 66722103,
+    "name": "Thunderclap Monk",
+    "type": "effect",
+    "url": "https://ygoprodeck.com/card/thunderclap-monk-9855",
+    "archetype": null,
+    "image": "https://images.ygoprodeck.com/images/cards_small/66722103.jpg",
+    "points": 9
   },
   {
     "id": 26400609,
@@ -6766,15 +6694,6 @@
     "archetype": null,
     "image": "https://images.ygoprodeck.com/images/cards_small/71068247.jpg",
     "points": 10
-  },
-  {
-    "id": 10802915,
-    "name": "Tour Guide From the Underworld",
-    "type": "effect",
-    "url": "https://ygoprodeck.com/card/tour-guide-from-the-underworld-932",
-    "archetype": null,
-    "image": "https://images.ygoprodeck.com/images/cards_small/10802915.jpg",
-    "points": 3
   },
   {
     "id": 38120068,
@@ -7029,15 +6948,6 @@
     "points": 20
   },
   {
-    "id": 10673071,
-    "name": "Virakam, the Divine Spirit of Artifice",
-    "type": "effect",
-    "url": "https://ygoprodeck.com/card/virakam-the-divine-spirit-of-artifice-15685",
-    "archetype": null,
-    "image": "https://images.ygoprodeck.com/images/cards_small/10673071.jpg",
-    "points": 2
-  },
-  {
     "id": 92519087,
     "name": "Virtual World Kyubi - Shenshen",
     "type": "synchro",
@@ -7045,15 +6955,6 @@
     "archetype": "Virtual World",
     "image": "https://images.ygoprodeck.com/images/cards_small/92519087.jpg",
     "points": 20
-  },
-  {
-    "id": 61345801,
-    "name": "Void Unleashing",
-    "type": "spell",
-    "url": "https://ygoprodeck.com/card/void-liberation-15396",
-    "archetype": "Void",
-    "image": "https://images.ygoprodeck.com/images/cards_small/61345801.jpg",
-    "points": 10
   },
   {
     "id": 2563463,
